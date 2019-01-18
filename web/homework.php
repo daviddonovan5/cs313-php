@@ -31,7 +31,7 @@ echo date('l, F j,');
 
 <div id="week1" class="tabcontent">
   <h3> Week 1</h3>
-  <p> Here is the link for Assingment 1: <a href="https://thawing-ocean-42992.herokuapp.com/hello.html" target="_blank">https://thawing-ocean-42992.herokuapp.com/hello.html</a> </p>
+  <p> Here is the link for Assingment 1: <a href="https://desolate-atoll-87534.herokuapp.com/hello.html" target="_blank">https://desolate-atoll-87534.herokuapp.com/hello.html</a> </p>
 </div>
 
 <div id="week2" class="tabcontent">
