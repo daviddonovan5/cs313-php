@@ -10,7 +10,7 @@
 <center><h2>David Donovan's Assignments</h2></center>
 <?php
 echo ('Today\'s Date: ');
-echo date('l, F j,');
+echo date('l, F j');
 ?>
 
 <div class="tab">
