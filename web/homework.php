@@ -36,7 +36,7 @@ echo date('l, F j');
 
 <div id="week2" class="tabcontent">
   <h3> Week 2</h3>
-  <p> This homepage is the Week's assingment </p>
+ <p> Here is the link for the Introduction: <a href="https://desolate-atoll-87534.herokuapp.com/index.html" target="_blank">https://desolate-atoll-87534.herokuapp.com/index.html</a> </p>
 </div>
 
 
