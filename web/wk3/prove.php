@@ -47,11 +47,11 @@ $_SESSION['quantity4'] = $quant4;
         <td><b>Multifunctional OTG Card Reader</b>--Supported memory card: SD, TF, MicroSD.</td> 
         <td>$12.00<br>
         Quantity:<br> <input id="Quantity1" type="number" name="widget1" min="0" max="20" value="<?php
-        //if(isset($_POST['addCart'])){
-          echo($_SESSION['quantity1']);
+        if(isset($_POST['addCart'])){
+          echo($quant1);
         }
         else{
-         echo('0');
+          echo('0');
         }
         ?>"</td>
       </tr>
@@ -61,7 +61,7 @@ $_SESSION['quantity4'] = $quant4;
         <td>$48.00<br>
         Quantity: <br><input id="Quantity2" type="number" name="widget2" min="0" max="20" value="<?php
         if(isset($_POST['addCart'])){
-          echo($_SESSION['quantity2']);
+          echo($quant2);
         }
         else{
           echo('0');
@@ -74,7 +74,7 @@ $_SESSION['quantity4'] = $quant4;
         <td>$25.00<br>
         Quantity: <br><input id="Quantity3" name="widget3" type="number" min="0" max="20" value="<?php
         if(isset($_POST['addCart'])){
-          echo($_SESSION['quantity3']);
+          echo($quant3);
         }
         else{
           echo('0');
@@ -87,7 +87,7 @@ $_SESSION['quantity4'] = $quant4;
         <td>$95.00<br>
         Quantity: <br><input id="Quantity4" name="widget4" type="number" min="0" max="20" value="<?php
         if(isset($_POST['addCart'])){
-          echo($_SESSION['quantity4'] );
+          echo($quant4 );
         }
         else{
           echo('0');
