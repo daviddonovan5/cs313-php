@@ -47,12 +47,12 @@ $_SESSION['quantity4'] = $quant4;
         <td><b>Multifunctional OTG Card Reader</b>--Supported memory card: SD, TF, MicroSD.</td> 
         <td>$12.00<br>
         Quantity:<br> <input id="Quantity1" type="number" name="widget1" min="0" max="20" value="<?php
-        //if(isset($_POST['addCart'])){
+        if(isset($_POST['addCart'])){
           echo($_SESSION['quantity1']);
-        //}
-        //else{
-        //  echo('0');
-        //}
+        }
+        else{
+          echo('0');
+        }
         ?>"</td>
       </tr>
       <tr>
