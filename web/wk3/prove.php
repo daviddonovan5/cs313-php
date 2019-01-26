@@ -48,11 +48,11 @@ $_SESSION['quantity4'] = $quant4;
         <td>$12.00<br>
         Quantity:<br> <input id="Quantity1" type="number" name="widget1" min="0" max="20" value="<?php
         //if(isset($_POST['addCart'])){
-          echo($quant1);
-        //}
-        //else{
-        //  echo('0');
-        //}
+          echo($_SESSION['quantity1']. "</td><td>$" . $_SESSION['quantity1'] * 12.00);
+        }
+        else{
+          echo('0');
+        }
         ?>"</td>
       </tr>
       <tr>
