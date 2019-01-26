@@ -42,7 +42,7 @@ echo date('l, F j');
 
 <div id="week3" class="tabcontent">
 	<h3> Week 3</h3>
-  <p> week 3 assingment is coming </p>
+  Here is the link for the Shopping Cart: <a href="https://desolate-atoll-87534.herokuapp.com/wk3/prove.php" target="_blank">https://desolate-atoll-87534.herokuapp.com/index.html</a> </p>
 </div>
 
 <div id="week4" class="tabcontent">
