@@ -50,9 +50,9 @@ $_SESSION['quantity4'] = $quant4;
         //if(isset($_POST['addCart'])){
           echo($_SESSION['quantity1']);
         }
-        //else{
-        //  echo('0');
-       // }
+        else{
+         echo('0');
+        }
         ?>"</td>
       </tr>
       <tr>
@@ -61,7 +61,7 @@ $_SESSION['quantity4'] = $quant4;
         <td>$48.00<br>
         Quantity: <br><input id="Quantity2" type="number" name="widget2" min="0" max="20" value="<?php
         if(isset($_POST['addCart'])){
-          echo($quant2);
+          echo($_SESSION['quantity2']);
         }
         else{
           echo('0');
@@ -74,7 +74,7 @@ $_SESSION['quantity4'] = $quant4;
         <td>$25.00<br>
         Quantity: <br><input id="Quantity3" name="widget3" type="number" min="0" max="20" value="<?php
         if(isset($_POST['addCart'])){
-          echo($quant3);
+          echo($_SESSION['quantity3']);
         }
         else{
           echo('0');
@@ -87,7 +87,7 @@ $_SESSION['quantity4'] = $quant4;
         <td>$95.00<br>
         Quantity: <br><input id="Quantity4" name="widget4" type="number" min="0" max="20" value="<?php
         if(isset($_POST['addCart'])){
-          echo($quant4 );
+          echo($_SESSION['quantity4'] );
         }
         else{
           echo('0');
