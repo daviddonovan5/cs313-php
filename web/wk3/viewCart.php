@@ -82,7 +82,7 @@ $_SESSION['totalCost'] = number_format($total, 2);
         <tfoot><td></td><td></td><td class="total"><b>TOTAL</b></td><td class="total"> $<?php  echo $total  ?></td></tfoot>
     </table>
  </form><form action="prove.php">
-<input type="submit" value="Continue Shopping" name="addCart" class="navagation" />
+<input type="submit" value="Continue Shopping" name="goShop" class="navagation" />
 </form><form action="checkout.php">
 <input type="submit" value="Check Out" class="navagation">
 

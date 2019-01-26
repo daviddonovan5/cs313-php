@@ -46,14 +46,7 @@ $_SESSION['quantity4'] = $quant4;
         <td><img class="itemPic" src="widget1.png" alt="Multifunctional OTG Card Reader" width="120px" height="120px"></td>
         <td><b>Multifunctional OTG Card Reader</b>--Supported memory card: SD, TF, MicroSD.</td> 
         <td>$12.00<br>
-        Quantity:<br> <input id="Quantity1" type="number" name="widget1" min="0" max="20" value="<?php
-        if(isset($_POST['addCart'])){
-          echo($_SESSION['quantity1']);
-        }
-        else{
-          echo('0');
-        }
-        ?>"</td>
+        Quantity:<br> <input id="Quantity1" type="number" name="widget1" min="0" max="20" value="echo($_SESSION['quantity1'])?>"</td>
       </tr>
       <tr>
         <td><img class="itemPic" src="widget2.png" alt="Lens Kit" width="120px" height="120px"></td>
