@@ -5,6 +5,9 @@
   <title>Team05</title>
   <head>
   	<h1>Scripture Resources</h1>
+  	<?php
+
+  	?>
 
   </head>
 
