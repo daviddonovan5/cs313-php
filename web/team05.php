@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Team05</title>
   <head>
-  	<h2>Scripture Resources</h2>
+  	<h1>Scripture Resources</h1>
 
   </head>
 
