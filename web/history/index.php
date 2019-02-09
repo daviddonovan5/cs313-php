@@ -26,7 +26,7 @@ session_start();
     
     <h4>Enter Information For a New Event</h4><hr/>
 
-      <span class="prompt"> Select the Orginization/Auxiliary</span>
+      <p class="prompt"> Select the Orginization/Auxiliary</p>
       <form>
       <select name="org">
       <option value=1>Bishopric</option>
