@@ -117,7 +117,8 @@ td{
 
 /* Create a custom radio button */
 .checkmark {
-  position: absolute;
+  position: relative;
+
   top: 0;
   left: 400px;
   height: 20px;
