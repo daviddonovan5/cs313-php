@@ -29,15 +29,15 @@ session_start();
       <h5> Select the Orginization/Auxiliary</h5>
 
       
-      <input type="radio" name="org" value="bisopric"> Bishopric<br>
-      <input type="radio" name="org" value="elders_quorum"> Elders Quorum<br>
-      <input type="radio" name="org" value="primary"> Primary<br>
-      <input type="radio" name="org" value="relief_society"> Relief Society<br>
-       <input type="radio" name="org" value="Sunday School"> Sunday School<br>
-      <input type="radio" name="org" value="activities"> Ward Activities<br>
-      <input type="radio" name="org" value="missionary"> Ward Missionary<br>
-      <input type="radio" name="org" value="young_men"> Young Men<br>
-      <input type="radio" name="org" value="young_women"> Young Women<br>
+      <input type="radio" name="org" value= 1> Bishopric<br>
+      <input type="radio" name="org" value= 3> Elders Quorum<br>
+      <input type="radio" name="org" value= 6> Primary<br>
+      <input type="radio" name="org" value= 2> Relief Society<br>
+       <input type="radio" name="org" value= 8> Sunday School<br>
+      <input type="radio" name="org" value= 9> Ward Activities<br>
+      <input type="radio" name="org" value= 7> Ward Missionary<br>
+      <input type="radio" name="org" value= 4> Young Men<br>
+      <input type="radio" name="org" value= 5> Young Women<br>
       
      
      
