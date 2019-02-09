@@ -119,9 +119,9 @@ td{
 .checkmark {
   position: absolute;
   top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
+  left: 58px;
+  height: 20px;
+  width: 20px;
   background-color: #eee;
   border-radius: 50%;
 }
