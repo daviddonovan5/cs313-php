@@ -17,7 +17,7 @@ session_start();
 
 <div id="heading">
   <CENTER> <img id="Annual Hisotry" src="annual-history.jpg" alt="Annual Hisotry" width="650" height="242">
-  <p id="contact">info@widgets.com<br>800-234-5678</p> </CENTER>
+  <p id="title">Mather Ward</p> </CENTER>
 </div>
 
 <div class="main">
