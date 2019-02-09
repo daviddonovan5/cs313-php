@@ -44,7 +44,7 @@ session_start();
       <input type="date" name="date"><br>
       <span class="prompt"> Enter the Name of the activity </span>
       <input type="text" name="activity_name"><br>
-      <span class="prompt"> Enter a description of the activity </span>
+      <p class="prompt"> Enter a description of the activity </p>
       <textarea rows="4" cols="50"></textarea><br>
       
       
