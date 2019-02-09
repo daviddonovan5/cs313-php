@@ -38,7 +38,10 @@ session_start();
       <option value=7>Ward Missionary</option>
       <option value=4>Young Men</option>
       <option value=5>Young Women</option>
-      </select><br>
+      </select><br> 
+
+      <p class="prompt"> Enter the Date of the activit </p>
+      <input type="date" name="date">
 
       
       
