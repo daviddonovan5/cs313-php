@@ -19,6 +19,20 @@
 
 <div class="main">
   <CENTER>
+  	<h4>Select the organization to see the activities </h4>
+  	<form action="">
+      
+      <select name="org">
+      <option value=1>Bishopric</option>
+      <option value=3>Elders Quorum</option>
+      <option value=6>Primary</option>
+      <option value=2>Relief Society</option>
+      <option value=8>Sunday School</option>
+      <option value=9>Ward Activities</option>
+      <option value=7>Ward Missionary</option>
+      <option value=4>Young Men</option>
+      <option value=5>Young Women</option>
+      </select><hr>
     
      
       
