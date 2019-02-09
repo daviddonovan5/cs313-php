@@ -28,22 +28,6 @@ session_start();
 
       <h5> Select the Orginization/Auxiliary</h5>
 
-      <label class="container">One
-        <input type="radio" checked="checked" name="radio">
-        <span class="checkmark"></span>
-      </label>
-      <label class="container">Two
-        <input type="radio" name="radio">
-        <span class="checkmark"></span>
-        </label>
-      <label class="container">Three
-        <input type="radio" name="radio">
-        <span class="checkmark"></span>
-      </label>
-      <label class="container">Four
-        <input type="radio" name="radio">
-        <span class="checkmark"></span>
-      </label>
       
       <input type="radio" name="org" value="bisopric"> Bishopric<br>
       <input type="radio" name="org" value="elders_quorum"> Elders Quorum<br>
