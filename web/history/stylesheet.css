@@ -8,9 +8,7 @@ h1{
 	font-size: 70px;
 }
 
-#logo{
 
-}
 
 body{
 	background-color: #DBDEE0;
@@ -56,8 +54,9 @@ td{
 	border-style: solid none none none;
 }
 
-p#title{
+#title{
 	font-size: 62px;
+	 position: relative;
 }
 	
 .navagation{
