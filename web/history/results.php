@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -16,3 +16,19 @@
   <p id="title">Mather Ward</p> </CENTER>
 
 </div>
+
+<div class="main">
+  <CENTER>
+    
+     
+      
+      
+     
+     
+      
+</form>
+<form action="index.php">
+<input type="submit" value="Enter an Activity" name="enter" class="navagation" />
+</form>
+</html>
+</body>
