@@ -26,7 +26,7 @@ session_start();
     
     <h4>Enter Information For a New Event</h4><hr/>
 
-      <h5> Select the Orginization/Auxiliary</h5>
+      <span id="orgSelect"> Select the Orginization/Auxiliary</span>
       <form>
       <select name="org">
       <option value=1>Bishopric</option>
@@ -38,7 +38,7 @@ session_start();
       <option value=7>Ward Missionary</option>
       <option value=4>Young Men</option>
       <option value=5>Young Women</option>
-      </select>
+      </select><br>
 
       
       
