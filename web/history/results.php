@@ -32,15 +32,10 @@
       <option value=7>Ward Missionary</option>
       <option value=4>Young Men</option>
       <option value=5>Young Women</option>
-      </select><hr>
+      </select>
     
-     
-      
-      
-     
-     
-      
-</form>
+    <input type="submit" value="Select" name="Select" class="navagation" />
+    </form><hr>
 <form action="index.php">
 <input type="submit" value="Enter an Activity" name="enter" class="navagation" />
 </form>
