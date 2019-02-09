@@ -16,7 +16,7 @@ session_start();
 <body>
 
 <div id="heading">
-  <CENTER> <img id="Annual Hisotry" src="annual-history.jpg" alt="Annual Hisotry" width="725" height="242">
+  <CENTER> <img id="Annual Hisotry" src="annual-history.jpg" alt="Annual Hisotry" width="650" height="242">
   <p id="contact">info@widgets.com<br>800-234-5678</p> </CENTER>
 </div>
 
