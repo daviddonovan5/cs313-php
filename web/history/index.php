@@ -6,7 +6,7 @@ session_start();
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Donovan's Widgets</title>
+  <title>Ward History</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 
@@ -16,7 +16,7 @@ session_start();
 <body>
 
 <div id="heading">
-  <CENTER> <img id="logo" src="logo.png" alt="logo" width="725" height="242">
+  <CENTER> <img id="Annual Hisotry" src="annual-history.jpeg" alt="Annual Hisotry" width="725" height="242">
   <p id="contact">info@widgets.com<br>800-234-5678</p> </CENTER>
 </div>
 
