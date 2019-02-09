@@ -18,6 +18,7 @@ session_start();
 <div id="heading">
   <CENTER> <img id="Annual Hisotry" src="annual-history.jpg" alt="Annual Hisotry" width="650" height="242">
   <p id="title">Mather Ward</p> </CENTER>
+  <hr class="brace">
 </div>
 
 <div class="main">
