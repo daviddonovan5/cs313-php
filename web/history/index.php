@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 
 <!DOCTYPE html>
 <html>
@@ -27,7 +25,8 @@ session_start();
     <h4>Enter Information For a New Event</h4><hr/>
 
       <span class="prompt"> Select the Orginization/Auxiliary</span>
-      <form>
+      <form action="">
+      
       <select name="org">
       <option value=1>Bishopric</option>
       <option value=3>Elders Quorum</option>
@@ -52,6 +51,9 @@ session_start();
      
       
 <input type="submit" value="Save" name="Save" class="navagation" />
+</form>
+<form action="results.php">
+<input type="submit" value="See Results" name="results" class="navagation" />
 </form>
 </html>
 </body>
