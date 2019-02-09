@@ -51,7 +51,7 @@ session_start();
      
      
       
-<input type="submit" value="Add to Cart" name="addCart" class="navagation" />
+<input type="submit" value="Save" name="Save" class="navagation" />
 </form>
 </html>
 </body>
