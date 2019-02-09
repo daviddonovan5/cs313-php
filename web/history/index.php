@@ -27,23 +27,25 @@ session_start();
     <h4>Enter Information For a New Event</h4><hr/>
 
       <h5> Select the Orginization/Auxiliary</h5>
+      <form>
+      <select name="org">
+      <option value=1>Bishopric</option>
+      <option value=3>Elders Quorum</option>
+      <option value=6>Primary</option>
+      <option value=2>Relief Society</option>
+      <option value=8>Sunday School</option>
+      <option value=9>Ward Activities</option>
+      <option value=7>Ward Missionary</option>
+      <option value=4>Young Men</option>
+      <option value=5>Young Women</option>
+      </select>
 
       
-      <input type="radio" name="org" value= 1> Bishopric<br>
-      <input type="radio" name="org" value= 3> Elders Quorum<br>
-      <input type="radio" name="org" value= 6> Primary<br>
-      <input type="radio" name="org" value= 2> Relief Society<br>
-       <input type="radio" name="org" value= 8> Sunday School<br>
-      <input type="radio" name="org" value= 9> Ward Activities<br>
-      <input type="radio" name="org" value= 7> Ward Missionary<br>
-      <input type="radio" name="org" value= 4> Young Men<br>
-      <input type="radio" name="org" value= 5> Young Women<br>
       
      
      
       
 <input type="submit" value="Add to Cart" name="addCart" class="navagation" />
-</form><form action="viewCart.php">
-<input type="submit" value="Go to Cart" class="navagation">
+</form>
 </html>
 </body>
