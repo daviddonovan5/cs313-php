@@ -18,13 +18,13 @@ session_start();
 <div id="heading">
   <CENTER> <img id="Annual Hisotry" src="annual-history.jpg" alt="Annual Hisotry" width="650" height="242">
   <p id="title">Mather Ward</p> </CENTER>
-  
+
 </div>
 
 <div class="main">
   <CENTER>
     
-    <h4>Please Select Your Purchase</h4><hr/>
+    <h4>Enter the information to a new event</h4><hr/>
 
     <table style="width:100%">
       <tr>
