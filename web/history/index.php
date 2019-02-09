@@ -40,8 +40,10 @@ session_start();
       <option value=5>Young Women</option>
       </select><br> 
 
-      <p class="prompt"> Enter the Date of the activit </p>
-      <input type="date" name="date">
+      <span class="prompt"> Enter the Date of the activit </span>
+      <input type="date" name="date"><br>
+      <span class="prompt"> Enter the Date of the activit </span>
+      <input type="date" name="date"><br>
 
       
       
