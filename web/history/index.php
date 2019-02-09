@@ -26,8 +26,17 @@ session_start();
     
     <h4>Enter Information For a New Event</h4><hr/>
 
+      <h5> Select the Orginization/Auxiliary</h5>
+      <input type="radio" name="org" value="bisopric"> Bishopric<br>
+      <input type="radio" name="org" value="reflief_society"> Reflief Society<br>
+      <input type="radio" name="org" value="elders_quorum"> Elders Quorum<br>
+      <input type="radio" name="org" value="young_men"> Young Men<br>
+      <input type="radio" name="org" value="young_women"> Young Women<br>
+      <input type="radio" name="org" value="primary"> Primary<br>
+      <input type="radio" name="org" value="missionary"> Ward Missionary<br>
+      <input type="radio" name="org" value="Sunday School"> Sunday School<br>
+      <input type="radio" name="org" value="activities"> Ward Activities<br>
       
- 
 <input type="submit" value="Add to Cart" name="addCart" class="navagation" />
 </form><form action="viewCart.php">
 <input type="submit" value="Go to Cart" class="navagation">
