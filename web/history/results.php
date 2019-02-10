@@ -47,12 +47,11 @@
       if (isset($_POST["org"])){
        include "db_connect.php";
         if ($_POST["org"] == 0){
-        
-        echo "<h3> All the Results</h3>";
-        foreach ($db->query('SELECT event.act_date, event.title, event.description, organization.organization_name, users.first_name, users.last_name
-        FROM event
-        INNER JOIN users ON event.user_id = users.user_id
-        INNER JOIN organization ON users.organization_id = organization.organization_id') as $row)
+          echo "<h3> All the Results</h3>";
+          foreach ($db->query('SELECT event.act_date, event.title, event.description, organization.organization_name, users.first_name, users.last_name
+            FROM event
+            INNER JOIN users ON event.user_id = users.user_id
+            INNER JOIN organization ON users.organization_id = organization.organization_id') as $row)
         {
         //print_r($row);
           echo "<p><b> <CENTER>" . $row['act_date'] . " {$row['title']} <br>{$row['organization_name']} </b></CENTER> </p>";
@@ -60,7 +59,17 @@
         }
       }
       else{
-        echo("wow");
+         
+          foreach ($db->query('SELECT event.act_date, event.title, event.description, organization.organization_name, users.first_name, users.last_name
+            FROM event
+            INNER JOIN users ON event.user_id = users.user_id
+            INNER JOIN organization ON users.organization_id = organization.organization_id') as $row)
+        {
+        //print_r($row);
+          echo "<h3> Results from </h3>" . $row['organization_name'];
+          echo "<p><b> <CENTER>" . $row['act_date'] . " {$row['title']} </b></CENTER> </p>";
+          echo "<p>" .$row['description'] . "</p>";
+        }
 
        
 
