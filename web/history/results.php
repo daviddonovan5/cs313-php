@@ -43,11 +43,14 @@
 
   <?php
   include "db_connect.php";
-  echo "<h1>Results</h1>";
-  foreach ($db->query('SELECT act_date, title, description FROM event') as $row)
+  echo "<h3>Results</h3>";
+  foreach ($db->query('SELECT event.act_date, event.title, event.description, user.first_name, user.last_name, organization.organization_name 
+    FROM event
+    INNER JOIN users ON events.user_id=users.user_id
+    INNER JOIN organization ON users.organization_id=organization.organization_id') as $row)
   {
     //print_r($row);
-    echo "<p><b> <CENTER>" . $row['act_date'] . " {$row['title']} </b></CENTER> <br>";
+    echo "<p><b> <CENTER>" . $row['act_date'] . " {$row['title']} <br> {$row[organization_name]}</b></CENTER> <br>";
     echo $row['description'];
     echo '"</p>';
   }
