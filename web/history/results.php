@@ -50,8 +50,8 @@
     INNER JOIN organization ON users.organization_id=organization.organization_id') as $row)
   {
     //print_r($row);
-    echo "<p><b> <CENTER>" . $row['act_date'] . " {$row['title']} <br> {$row[organization_name]}</b></CENTER> <br>";
-    echo $row['description'];
+    echo "<p><b> <CENTER>" . $row['event.act_date'] . " {$row['event.title']} <br> {$row[organization.organization_name ]}</b></CENTER> <br>";
+    echo $row['event.description'];
     echo '"</p>';
   }
   ?>
