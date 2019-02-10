@@ -45,10 +45,10 @@
   <?php
       
       if (isset($_POST["org"])){
-       // include "db_connect.php";
-        if ($_POST["org"] == 0){
+        include "db_connect.php";
+        //if ($_POST["org"] == 0){
           echo("Wow")
-        }
+        //}
 
 
 
