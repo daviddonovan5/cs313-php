@@ -59,7 +59,10 @@
         }
       }
       else{
-         echo "<h3> Results from </h3>" . $row['organization_name'];
+        $db->query("SELECT organization_name FROM organization 
+          WHERE organization_id = {$_POST["org"]}") as $org)
+         echo "<h3> Results from </h3>" . $org['organization_name'];
+         
           foreach ($db->query("SELECT event.act_date, event.title, event.description, organization.organization_name, users.first_name, users.last_name
             FROM event
             INNER JOIN users ON event.user_id = users.user_id
