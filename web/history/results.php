@@ -48,7 +48,7 @@
   {
     //print_r($row);
     echo "<p><b> <CENTER>" . $row['act_date'] . " {$row['title']} </b></CENTER> <br></p>";
-    echo $row['description'];
+    echo "<p id="description">" .$row['description'] . "</p>";
     
   }
   ?>
