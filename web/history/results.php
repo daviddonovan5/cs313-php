@@ -42,10 +42,9 @@
 </form>
 
   <?php
-    if(isset($_POST) && $_POST['org']){
       
       echo("This works")
-    }
+    
   ?>
     
 </html>
