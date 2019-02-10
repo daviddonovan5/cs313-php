@@ -59,8 +59,8 @@
           echo "<p>" .$row['description'] . "</p>";
         }
       }
-      //else{
-       // echo("wow");
+      else{
+        echo("wow");
 
        // include "db_connect.php";
         
@@ -77,7 +77,7 @@
           //echo "<p>" .$row['description'] . "</p>";
         //}
 
-      //}
+      }
     } 
 
 
