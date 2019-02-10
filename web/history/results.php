@@ -48,17 +48,7 @@
         include "db_connect.php";
 
         if ($_POST == 0){
-          echo "<h3>Results</h3>";
-          foreach ($db->query('SELECT event.act_date, event.title, event.description, organization.organization_name, users.first_name, users.last_name
-          FROM event
-          INNER JOIN users ON event.user_id = users.user_id
-          INNER JOIN organization ON users.organization_id = organization.organization_id') as $row)
-            {
-                
-                echo "<p><b> <CENTER>" . $row['act_date'] . " {$row['title']} <br>{$row['organization_name']} </b></CENTER> </p>";
-                echo "<p>" .$row['description'] . "</p>";
-              }
-
+          echo("Wow")
         }
 
 
