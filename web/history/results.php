@@ -20,7 +20,7 @@
 <div class="main">
   <CENTER>
   	<h4>Select the organization to see the activities </h4>
-  	<form method="_POST" action="">
+  	<form method="post" action="">
         
       <select name="org">
       <option value=0>All</option>
