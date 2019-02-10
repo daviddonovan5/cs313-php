@@ -43,7 +43,7 @@
 
   <?php
   include "db_connect.php";
-  echo "<h1>Results</h1>";
+  echo "<h3>Results</h3>";
   foreach ($db->query('SELECT act_date, title, description FROM event') as $row)
   {
     //print_r($row);
