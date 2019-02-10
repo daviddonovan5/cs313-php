@@ -45,8 +45,7 @@
   <?php
       
       if (isset($_POST["org"])){
-        include "db_connect.php";
-
+       // include "db_connect.php";
         if ($_POST == 0){
           echo("Wow")
         }
