@@ -41,15 +41,6 @@
 <input type="submit" value="Enter an Activity" name="enter" class="navagation" />
 </form>
 
-  <?php
-    if(isset($_POST)){
-      
-        echo " This works";
-      } else {
-        echo "Sorry";
-      }
-    }
-  ?>
   
     
 </html>
