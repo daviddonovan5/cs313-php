@@ -46,11 +46,10 @@
   echo "<h3>Results</h3>";
   foreach ($db->query('SELECT event.act_date, event.title, event.description, user.first_name, user.last_name, organization.organization_name 
     FROM event
-    INNER JOIN users ON events.user_id=users.user_id
-    INNER JOIN organization ON users.organization_id=organization.organization_id') as $row)
+    INNER JOIN users ON events.user_id=users.user_id') as $row)
   {
     //print_r($row);
-    echo "<p><b> <CENTER>" . $row['event.act_date'] . " {$row['event.title']} <br> {$row[organization.organization_name ]}</b></CENTER> <br>";
+    echo "<p><b> <CENTER>" . $row['event.act_date'] . " {$row['event.title']} </b></CENTER> <br>";
     echo $row['event.description'];
     echo '"</p>';
   }
