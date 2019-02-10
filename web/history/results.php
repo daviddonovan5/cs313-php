@@ -43,10 +43,8 @@
 
   <?php
   include "db_connect.php";
-  echo "<h3>Results</h3>";
-  foreach ($db->query('SELECT event.act_date, event.title, event.description, user.first_name, user.last_name, organization.organization_name 
-    FROM event
-    INNER JOIN users ON events.user_id=users.user_id') as $row)
+  echo "<h1>Results</h1>";
+  foreach ($db->query('SELECT act_date, title, description FROM event') as $row)
   {
     //print_r($row);
     echo "<p><b> <CENTER>" . $row['act_date'] . " {$row['title']} </b></CENTER> <br>";
