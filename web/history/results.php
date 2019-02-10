@@ -59,8 +59,8 @@
           echo "<p>" .$row['description'] . "</p>";
         }
       }
-      else{
-        echo("wow");
+      //else{
+       // echo("wow");
 
        // include "db_connect.php";
         
@@ -75,9 +75,9 @@
         
           //echo "<p><b> <CENTER>" . $row['act_date'] . " {$row['title']} <br>{$row['organization_name']} </b></CENTER> </p>";
           //echo "<p>" .$row['description'] . "</p>";
-        }
+        //}
 
-      }
+      //}
     } 
 
 
