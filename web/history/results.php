@@ -41,7 +41,12 @@
 <input type="submit" value="Enter an Activity" name="enter" class="navagation" />
 </form>
 
-  
+  <?php
+    if(isset($_POST) && $_POST['org']){
+      
+      echo("This works")
+    }
+  ?>
     
 </html>
 </body>
