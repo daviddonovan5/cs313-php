@@ -47,7 +47,7 @@
   foreach ($db->query('SELECT act_date, title, description FROM event') as $row)
   {
     //print_r($row);
-    echo "<p><b>" . $row['act_date'] . " {$row['title']} </b> \"";
+    echo "<p><b> <CENTER>" . $row['act_date'] . " {$row['title']} </b></CENTER> <br>";
     echo $row['description'];
     echo '"</p>';
   }
