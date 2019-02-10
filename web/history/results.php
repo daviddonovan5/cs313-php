@@ -43,6 +43,7 @@
 
   <?php
       
+      if (isset($_POST["org"])) 
       echo("This works")
     
   ?>
