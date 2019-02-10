@@ -20,8 +20,8 @@
 <div class="main">
   <CENTER>
   	<h4>Select the organization to see the activities </h4>
-  	<form action="">
-      
+  	<form method="_POST" action="">
+        
       <select name="org">
       <option value=0>All</option>
       <option value=1>Bishopric</option>
@@ -40,5 +40,19 @@
 <form action="index.php">
 <input type="submit" value="Enter an Activity" name="enter" class="navagation" />
 </form>
+
+  <?php
+  include "db_connect.php";
+  echo "<h1>Results</h1>";
+  foreach ($db->query('SELECT act_date, title, description FROM event') as $row)
+  {
+    //print_r($row);
+    echo "<p><b>" . $row['act_date'] . " {$row['title']} </b> \"";
+    echo $row['description'];
+    echo '"</p>';
+  }
+  ?>
+  
+    
 </html>
 </body>
