@@ -64,7 +64,7 @@
             FROM event
             INNER JOIN users ON event.user_id = users.user_id
             INNER JOIN organization ON users.organization_id = organization.organization_id
-            WHERE organization_id = 1") as $row)
+            WHERE organization_id = 3") as $row)
         {
         //print_r($row);
           
