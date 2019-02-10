@@ -66,7 +66,7 @@
             FROM event
             INNER JOIN users ON event.user_id = users.user_id
             INNER JOIN organization ON users.organization_id = organization.organization_id
-            WHERE organization.organization_name = {$_POST["org"]}") as $row)
+            WHERE organization.organization_name  = 'Elders Quorum'") as $row)
         {
         //print_r($row);
           
