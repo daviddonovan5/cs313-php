@@ -23,6 +23,7 @@
   	<form action="">
       
       <select name="org">
+      <option value=0>All</option>
       <option value=1>Bishopric</option>
       <option value=3>Elders Quorum</option>
       <option value=6>Primary</option>
