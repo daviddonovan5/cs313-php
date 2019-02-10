@@ -25,15 +25,15 @@
         
       <select name="org">
       <option value=0>All</option>
-      <option value=1>Bishopric</option>
-      <option value=3>Elders Quorum</option>
-      <option value=6>Primary</option>
-      <option value=2>Relief Society</option>
-      <option value=8>Sunday School</option>
-      <option value=9>Ward Activities</option>
-      <option value=7>Ward Missionary</option>
-      <option value=4>Young Men</option>
-      <option value=5>Young Women</option>
+      <option value="Bishopric">Bishopric</option>
+      <option value="Elders Quorum">Elders Quorum</option>
+      <option value="Primary">Primary</option>
+      <option value="Relief Society">Relief Society</option>
+      <option value="Sunday School">Sunday School</option>
+      <option value="Ward Activities">Ward Activities</option>
+      <option value="Ward Missionary">Ward Missionary</option>
+      <option value="Young Men">Young Men</option>
+      <option value="Young Women">Young Women</option>
       </select>
     
     <input type="submit" value="Select" name="Select" class="navagation" />
@@ -59,16 +59,14 @@
         }
       }
       else{
-        $db->query("SELECT organization_name FROM organization 
-          WHERE organization_id = {$_POST["org"]}") as $org;
+        
 
-         echo "<h3> Results from </h3>" . $org['organization_name'];
-
+         
           foreach ($db->query("SELECT event.act_date, event.title, event.description, organization.organization_name, users.first_name, users.last_name
             FROM event
             INNER JOIN users ON event.user_id = users.user_id
             INNER JOIN organization ON users.organization_id = organization.organization_id
-            WHERE organization.organization_id = {$_POST["org"]}") as $row)
+            WHERE organization.organization_name = '{$_POST["org"]}'") as $row)
         {
         //print_r($row);
           
