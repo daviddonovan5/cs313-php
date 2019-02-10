@@ -49,8 +49,8 @@
     INNER JOIN users ON events.user_id=users.user_id') as $row)
   {
     //print_r($row);
-    echo "<p><b> <CENTER>" . $row['event.act_date'] . " {$row['event.title']} </b></CENTER> <br>";
-    echo $row['event.description'];
+    echo "<p><b> <CENTER>" . $row['act_date'] . " {$row['title']} </b></CENTER> <br>";
+    echo $row['description'];
     echo '"</p>';
   }
   ?>
