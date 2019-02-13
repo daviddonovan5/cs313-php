@@ -9,10 +9,14 @@
 
 <body>
 
+	<h1>Enter New Scripture</h1>
+
   	<form method="post" action="">
+  		Book: <input type="text" id="book" name="book">
+
         
       
-    <input type="submit" value="Select" name="Select" />
+    
     </form>
 
   <?php
