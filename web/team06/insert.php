@@ -12,8 +12,13 @@
 	<h1>Enter New Scripture</h1>
 
   	<form method="post" action="">
-  		Book: <input type="text" id="book" name="book">
-  		Chapter: <input type="number" id="book" name="book">
+  		Book: <input type="text"  name="book"><br>
+  		Chapter: <input type="number"  name="chapter"><br>
+  		Verse: <input type="number"  name="verse"><br>
+
+
+  		
+
 
         
       
