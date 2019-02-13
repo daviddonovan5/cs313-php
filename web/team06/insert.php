@@ -13,6 +13,7 @@
 
   	<form method="post" action="">
   		Book: <input type="text" id="book" name="book">
+  		Chapter: <input type="number" id="book" name="book">
 
         
       
