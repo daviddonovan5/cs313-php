@@ -18,7 +18,7 @@
   <?php
       
       
-       include "db_Connect.php";
+       include "db_Connect.php"; 
   ?>
     
 </html>
