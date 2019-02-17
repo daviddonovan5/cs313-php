@@ -113,7 +113,10 @@ try
   $statement->bindValue(':title', $title);
   $statement->bindValue(':description', $description);
   $statement->bindValue(':organization_id', $organization_id) ;
-  $statement->execute();
+  $statement->bindValue(':user', $user) ;
+  $statement->bindValue(':updated', $updated) ;
+  
+    $statement->execute();
 
   echo "Thank you " .$first_name . " for submitting the event called \"" . $title . "\"";
   
