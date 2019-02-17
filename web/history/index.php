@@ -104,14 +104,14 @@ try
   //$statement->execute();
 
 
- $statementEvent = $db->prepare('INSERT INTO event(act_date, title, description, organization_id) VALUES(:act_date, :title, :description, :organization_id)'); 
+ $statement = $db->prepare('INSERT INTO event(act_date, title, description, organizaiton_id) VALUES(:act_date, :title, :description, :organization_id)'); 
   
   
-  $statementEvent->bindValue(':act_date', $act_date);
-  $statementEvent->bindValue(':title', $title);
-  $statementEvent->bindValue(':Description', $description);
-  $statementEvent->bindValue(':organization_id', $organization_id) ;
-  $statementEvent->execute();
+  $statement->bindValue(':act_date', $act_date);
+  $statement->bindValue(':title', $title);
+  $statement->bindValue(':Description', $description);
+  $statement->bindValue(':organization_id', $organization_id) ;
+  $statement->execute();
 
   echo "Thank you " .$fname . " for submitting the event called \"" . $activity_name . "\"";
   
