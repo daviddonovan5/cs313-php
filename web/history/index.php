@@ -96,13 +96,13 @@ try
 {
   
   echo("This is the try");
-  //$statement = $db->prepare('INSERT INTO users(organization_id, email, first_name, last_name) VALUES(:organization_id, :email, :first_name, :last_name)');
+  $statement = $db->prepare('INSERT INTO users(organization_id, email, first_name, last_name) VALUES(:organization_id, :email, :first_name, :last_name)');
   
-  //$statement->bindValue(':organization_id', $organization_id);
-  //$statement->bindValue(':email', $email);
-  //$statement->bindValue(':first_name', $first_name);
-  //$statement->bindValue(':last_name', $last_name) ;
-  //$statement->execute();
+  $statement->bindValue(':organization_id', $organization_id);
+  $statement->bindValue(':email', $email);
+  $statement->bindValue(':first_name', $first_name);
+  $statement->bindValue(':last_name', $last_name) ;
+  $statement->execute();
  
   // get the new id
   //$scriptureId = $db->lastInsertId("scripture_id_seq");
