@@ -92,7 +92,7 @@ echo "Thank you " .$fname . " for submitting the event called \"" . $activity_na
 //include "db_connect.php";
 
 
-//try
+try
 {
   
   echo("This is the try")
