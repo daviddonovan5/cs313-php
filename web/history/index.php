@@ -118,12 +118,9 @@ try
    // $statement->execute();
   
 }
-catch ()
-{
-    echo "There was an error";
-  die();
+catch{
+  echo("There was an error")
 }
-
 
 
 
