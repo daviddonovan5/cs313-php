@@ -24,7 +24,7 @@
     
     <h4>Enter Information For a New Event</h4><hr/>
 
-    <form id="newHistory" action="" method="POST">
+    <form name="newHistory" action="" method="POST">
 
       <span class="prompt"> Enter your first name </span><br>
       <input type="text" name="fname"><br>
@@ -61,8 +61,10 @@
 
 <?php
 
-
-echo("Thank you for submitting the history")
+ if (isset($_POST["newHistory"])){
+  
+echo("Thank you for submitting the history");
+}
 
 // get the data from the POST 
 
