@@ -41,7 +41,7 @@
       <option value=4>Young Men</option>
       <option value=5>Young Women</option>
       </select><br>
-      <span class="prompt"> Enter the Date of the activity </span><br>
+      <span class="prompt"> Enter the Date of the activity (yyyy-mo-dd)</span><br>
       <input type="date" name="date"><br>
       <span class="prompt"> Enter the Name of the activity </span><br>
       <input type="text" name="activity_name">
