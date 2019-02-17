@@ -24,7 +24,7 @@
     
     <h4>Enter Information For a New Event</h4><hr/>
 
-    <form name="newHistory" action="" method="POST">
+    <form id="newHistory" action="" method="POST">
 
       <span class="prompt"> Enter your first name </span><br>
       <input type="text" name="fname"><br>
@@ -32,7 +32,6 @@
       <input type="text" name="lname"><br>
       <span class="prompt"> Select the orginization </span><br>
       <select name="org">
-      <option value=0>All</option>
       <option value=1>Bishopric</option>
       <option value=3>Elders Quorum</option>
       <option value=6>Primary</option>
