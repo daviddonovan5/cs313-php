@@ -94,8 +94,8 @@ include "db_connect.php";
 try
 {
   
-  $query = 'INSERT INTO users(organization_id, email, first_name, last_name) VALUES(:organization_id, :email, :first_name, :last_name)';
-  $statement = $db->prepare($query);
+  
+  $statement = $db->prepare('INSERT INTO users(organization_id, email, first_name, last_name) VALUES(:organization_id, :email, :first_name, :last_name)');
   
   $statement->bindValue(':organization_id', $organization_id);
   $statement->bindValue(':email', $email);
