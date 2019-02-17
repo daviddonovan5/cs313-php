@@ -61,10 +61,9 @@
 
 <?php
 
- if (isset($_POST["newHistory"])){
+
 echo("Thank you for submitting the history")
 
- }
 // get the data from the POST 
 
 
