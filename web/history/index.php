@@ -91,8 +91,8 @@ echo "Thank you " .$fname . " for submitting the event called \"" . $activity_na
 
 include "db_connect.php";
 
-try
-{
+//try
+//{
   
   
   //$statement = $db->prepare('INSERT INTO users(organization_id, email, first_name, last_name) VALUES(:organization_id, :email, :first_name, :last_name)');
@@ -125,7 +125,7 @@ try
 //  die();
 //}
 
-}
+//}
 }
 
 
