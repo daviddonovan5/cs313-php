@@ -82,8 +82,8 @@ if ($error) {
 $first_name = $_POST['fname'];
 $last_name = $_POST['lname'];
 $organization_id = $_POST['org'];
-$date = $_POST['date'];
-$activity_name = $_POST['activity_name'];
+$act_date = $_POST['date'];
+$title = $_POST['activity_name'];
 $description = $_POST['description'];
 $email = $_POST['email'];
 
@@ -105,14 +105,14 @@ try
   $statement->execute();
 
 
- // $statement = $db->prepare('INSERT INTO event(act_date, title, description, organization_id) VALUES(:act_date, :title, :description, :organization_id)');
+ $statement = $db->prepare('INSERT INTO event(act_date, title, description, organization_id) VALUES(:act_date, :title, :description, :organization_id)');
   
   
-  //$statement->bindValue(':act_date', $date);
-  //$statement->bindValue(':title', $activity_name);
-  //$statement->bindValue(':Description', $description)
-  //$statement->bindValue(':organization_id', $organization_id) ;
-  //$statement->execute();
+  $statement->bindValue(':act_date', $act_date);
+  $statement->bindValue(':title', $title);
+  $statement->bindValue(':Description', $description)
+  $statement->bindValue(':organization_id', $organization_id) ;
+  $statement->execute();
  
   
   
