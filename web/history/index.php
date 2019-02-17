@@ -75,10 +75,22 @@ foreach($required as $field) {
 if ($error) {
   echo "All fields are required.";
 } else {
-  echo "Proceed...";
+  
+  // get the data from the POST
+$fname = $_POST['fname'];
+$lname = $_POST['lname'];
+$org = $_POST['org'];
+$date = $_POST['date'];
+$activity_name = $_POST['activity_name'];
+$description = $_POST['description'];
+
+echo "Thank you " .$fname . " for submitting the event called \"" . $activity_name . "\"";
+
+
+
+
 }
 
-// get the data from the POST 
 
 
 
