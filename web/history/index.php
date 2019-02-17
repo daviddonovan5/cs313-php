@@ -61,9 +61,22 @@
 
 <?php
 
-$check_array = array('fname', 'lname', 'org', 'date', 'activity_name', 'description' );
-if (!array_diff($check_array, array_keys($_POST)) && !empty($_POST))
-    echo 'all exists';
+// Required field names
+$required = array('fname', 'lname', 'org', 'date', 'activity_name', 'description');
+
+// Loop over field names, make sure each one exists and is not empty
+$error = false;
+foreach($required as $field) {
+  if (empty($_POST[$field])) {
+    $error = true;
+  }
+}
+
+if ($error) {
+  echo "All fields are required.";
+} else {
+  echo "Proceed...";
+}
 
 // get the data from the POST 
 
