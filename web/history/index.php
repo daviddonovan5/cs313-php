@@ -105,14 +105,14 @@ try
   $statement->execute();
 
 
-  $statement = $db->prepare('INSERT INTO event(act_date, title, description, organization_id) VALUES(:act_date, :title, :description, :organization_id)');
+ // $statement = $db->prepare('INSERT INTO event(act_date, title, description, organization_id) VALUES(:act_date, :title, :description, :organization_id)');
   
   
-  $statement->bindValue(':act_date', $date);
-  $statement->bindValue(':title', $activity_name);
-  $statement->bindValue(':Description', $description)
-  $statement->bindValue(':organization_id', $organization_id) ;
-  $statement->execute();
+  //$statement->bindValue(':act_date', $date);
+  //$statement->bindValue(':title', $activity_name);
+  //$statement->bindValue(':Description', $description)
+  //$statement->bindValue(':organization_id', $organization_id) ;
+  //$statement->execute();
  
   
   
