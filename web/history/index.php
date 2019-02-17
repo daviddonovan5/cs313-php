@@ -90,7 +90,7 @@ $email = $_POST['email'];
 echo "Thank you " .$fname . " for submitting the event called \"" . $activity_name . "\"";
 
 //include "db_connect.php";
-required 
+
 
 //try
 {
