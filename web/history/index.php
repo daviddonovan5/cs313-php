@@ -90,8 +90,9 @@ $email = $_POST['email'];
 echo "Thank you " .$fname . " for submitting the event called \"" . $activity_name . "\"";
 
 //include "db_connect.php";
+required 
 
-try
+//try
 {
   
   echo("This is the try")
@@ -116,7 +117,7 @@ try
    // $statement->bindValue(':topicId', $topicId);
    // $statement->execute();
   
-//}
+}
 catch (Exception $ex)
 {
   // Please be aware that you don't want to output the Exception message in
