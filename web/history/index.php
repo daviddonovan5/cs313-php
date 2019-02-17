@@ -92,18 +92,18 @@ echo "Thank you " .$fname . " for submitting the event called \"" . $activity_na
 require("db_connect.php");
 $db = get_db();
 
-try
-{
+//try
+//{
   // Add the event
   
-  $query = 'INSERT INTO users(organization_id, email, first_name, last_name) VALUES(:organization_id, :email, :first_name, :last_name)';
-  $statement = $db->prepare($query);
+//  $query = 'INSERT INTO users(organization_id, email, first_name, last_name) VALUES(:organization_id, :email, :first_name, :last_name)';
+  //$statement = $db->prepare($query);
   
-  $statement->bindValue(':organization_id', $organization_id);
-  $statement->bindValue(':email', $email);
-  $statement->bindValue(':first_name', $first_name);
-  $statement->bindValue(':last_name', $last_name) ;
-  $statement->execute();
+  //$statement->bindValue(':organization_id', $organization_id);
+ // $statement->bindValue(':email', $email);
+ // $statement->bindValue(':first_name', $first_name);
+ // $statement->bindValue(':last_name', $last_name) ;
+ // $statement->execute();
   // get the new id
   //$scriptureId = $db->lastInsertId("scripture_id_seq");
   // Now go through each topic id in the list from the user's checkboxes
@@ -117,14 +117,14 @@ try
    // $statement->bindValue(':topicId', $topicId);
    // $statement->execute();
   
-}
-catch{
-  echo("There was an error")
-}
-
-
-
-
+//}
+//catch (Exception $ex)
+//{
+  // Please be aware that you don't want to output the Exception message in
+  // a production environment
+ // echo "Error with DB. Details: $ex";
+//  die();
+//}
 
 }
 
