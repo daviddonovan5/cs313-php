@@ -61,7 +61,7 @@
 
 <?php
 
-$check_array = array('fname', 'lname' );
+$check_array = array('fname', 'lname', 'org', 'date', 'activity_name', 'description' );
 if (!array_diff($check_array, array_keys($_POST)))
     echo 'all exists';
 
