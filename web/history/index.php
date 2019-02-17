@@ -116,7 +116,7 @@ try
   //  $statement->bindValue(':scriptureId', $scriptureId);
    // $statement->bindValue(':topicId', $topicId);
    // $statement->execute();
-  }
+  
 }
 catch ()
 {
