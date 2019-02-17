@@ -109,7 +109,7 @@ try
   
   $statement->bindValue(':act_date', $act_date);
   $statement->bindValue(':title', $title);
-  $statement->bindValue(':Description', $description);
+  $statement->bindValue(':description', $description);
   $statement->bindValue(':organization_id', $organization_id) ;
   $statement->execute();
 
