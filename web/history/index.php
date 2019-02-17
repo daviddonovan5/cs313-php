@@ -92,8 +92,10 @@ echo "Thank you " .$fname . " for submitting the event called \"" . $activity_na
 include "db_connect.php";
 
 
+try
+{
   
-  echo("This is the try")
+  echo("This is the try");
   //$statement = $db->prepare('INSERT INTO users(organization_id, email, first_name, last_name) VALUES(:organization_id, :email, :first_name, :last_name)');
   
   //$statement->bindValue(':organization_id', $organization_id);
@@ -115,6 +117,14 @@ include "db_connect.php";
    // $statement->bindValue(':topicId', $topicId);
    // $statement->execute();
   
+}
+catch (Exception $ex)
+{
+  // Please be aware that you don't want to output the Exception message in
+  // a production environment
+ // echo "Error with DB. Details: $ex";
+ die();
+}
 
 //}
 }
