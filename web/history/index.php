@@ -62,7 +62,7 @@
 <?php
 
 $check_array = array('fname', 'lname', 'org', 'date', 'activity_name', 'description' );
-if (!array_diff($check_array, array_keys($_POST)) && !empty($check_array))
+if (!array_diff($check_array, array_keys($_POST)) && !empty($_POST))
     echo 'all exists';
 
 // get the data from the POST 
