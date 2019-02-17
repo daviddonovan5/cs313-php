@@ -95,13 +95,13 @@ try
 {
   
   
- // $statement = $db->prepare('INSERT INTO users(organization_id, email, first_name, last_name) VALUES(:organization_id, :email, :first_name, :last_name)');
+  $statement = $db->prepare('INSERT INTO users(organization_id, email, first_name, last_name) VALUES(:organization_id, :email, :first_name, :last_name)');
   
-  //$statement->bindValue(':organization_id', $organization_id);
-  //$statement->bindValue(':email', $email);
-  //$statement->bindValue(':first_name', $first_name);
-  //$statement->bindValue(':last_name', $last_name) ;
-  //$statement->execute();
+  $statement->bindValue(':organization_id', $organization_id);
+  $statement->bindValue(':email', $email);
+  $statement->bindValue(':first_name', $first_name);
+  $statement->bindValue(':last_name', $last_name) ;
+  $statement->execute();
 
 
  $statement = $db->prepare('INSERT INTO event(act_date, title, description, organizaiton_id) VALUES(:act_date, :title, :description, :organization_id)'); 
@@ -113,7 +113,7 @@ try
   $statement->bindValue(':organization_id', $organization_id) ;
   $statement->execute();
 
-  echo "Thank you " .$fname . " for submitting the event called \"" . $activity_name . "\"";
+  echo "Thank you " .$first_name . " for submitting the event called \"" . $title . "\"";
   
   
 }
