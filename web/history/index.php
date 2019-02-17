@@ -61,7 +61,7 @@
 
 <?php
 
-$check_array = array($_POST['fname'], $_POST['lname'] );
+$check_array = array('fname', 'lname' );
 if (!array_diff($check_array, array_keys($_POST)))
     echo 'all exists';
 
