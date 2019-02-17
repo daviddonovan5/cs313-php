@@ -45,7 +45,7 @@
       <option value=5>Young Women</option>
       </select><br>
       <span class="prompt"> Enter the Date of the activity (yyyy-mo-dd)</span><br>
-      <input type="date" name="date"><br>
+      <input type="text" name="date"><br>
       <span class="prompt"> Enter the Name of the activity </span><br>
       <input type="text" name="activity_name">
       <p class="prompt"> Enter a description of the activity </p>
@@ -87,7 +87,6 @@ $title = $_POST['activity_name'];
 $description = $_POST['description'];
 $email = $_POST['email'];
 
-echo "Thank you " .$fname . " for submitting the event called \"" . $activity_name . "\"";
 
 include "db_connect.php";
 
@@ -114,7 +113,7 @@ try
   $statementEvent->bindValue(':organization_id', $organization_id) ;
   $statementEvent->execute();
 
-
+  echo "Thank you " .$fname . " for submitting the event called \"" . $activity_name . "\"";
   
   
 }
