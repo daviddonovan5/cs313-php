@@ -105,33 +105,22 @@ try
   $statement->execute();
 
 
-  
-  
-}
-catch (Exception $ex)
-{
- 
- die();
-}
-
-try
-{
- 
  $statementEvent = $db->prepare('INSERT INTO event(act_date, title, description, organization_id) VALUES(:act_date, :title, :description, :organization_id)');
   
   
   $statementEvent->bindValue(':act_date', $act_date);
   $statementEvent->bindValue(':title', $title);
-  $statementEvent->bindValue(':Description', $description)
+  $statementEvent->bindValue(':Description', $description);
   $statementEvent->bindValue(':organization_id', $organization_id) ;
   $statementEvent->execute();
- 
+
+
   
   
 }
 catch (Exception $ex)
 {
-  
+ echo("Something went Wrong Please try again")
  die();
 }
 
