@@ -47,7 +47,7 @@
       <span class="prompt"> Enter the Name of the activity </span><br>
       <input type="text" name="activity_name">
       <p class="prompt"> Enter a description of the activity </p>
-      <textarea rows="4" cols="50"></textarea><br>
+      <textarea rows="4" cols="50" name="description"></textarea><br>
       
       
      
@@ -61,10 +61,9 @@
 
 <?php
 
- if (isset($_POST)){
-  
-echo("Thank you for submitting the history");
-}
+$check_array = array($_POST['fname'], $_POST['lname'] );
+if (!array_diff($check_array, array_keys($_POST)))
+    echo 'all exists';
 
 // get the data from the POST 
 
