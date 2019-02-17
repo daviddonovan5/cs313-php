@@ -86,6 +86,8 @@ $act_date = $_POST['date'];
 $title = $_POST['activity_name'];
 $description = $_POST['description'];
 $email = $_POST['email'];
+$updated = date('Y-m-d');
+$user = 1;
 
 
 include "db_connect.php";
@@ -104,7 +106,7 @@ try
   $statement->execute();
 
 
- $statement = $db->prepare('INSERT INTO event(user_id, updated, act_date, title, description, organizaiton_id) VALUES(1, '2019-01-01', :act_date, :title, :description, :organization_id)'); 
+ $statement = $db->prepare('INSERT INTO event(user_id, updated, act_date, title, description, organizaiton_id) VALUES(:user, :updated, :act_date, :title, :description, :organization_id)'); 
   
   
   $statement->bindValue(':act_date', $act_date);
