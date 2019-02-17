@@ -30,6 +30,8 @@
       <input type="text" name="fname"><br>
       <span class="prompt"> Enter your last name </span><br>
       <input type="text" name="lname"><br>
+      <span class="prompt"> Enter your email </span><br>
+      <input type="text" name="email"><br>
       <span class="prompt"> Select the orginization </span><br>
       <select name="org">
       <option value=1>Bishopric</option>
@@ -62,7 +64,7 @@
 <?php
 
 // Required field names
-$required = array('fname', 'lname', 'org', 'date', 'activity_name', 'description');
+$required = array('fname', 'lname', 'email', 'org', 'date', 'activity_name', 'description');
 
 // Loop over field names, make sure each one exists and is not empty
 $error = false;
@@ -77,14 +79,52 @@ if ($error) {
 } else {
   
   // get the data from the POST
-$fname = $_POST['fname'];
-$lname = $_POST['lname'];
-$org = $_POST['org'];
+$first_name = $_POST['fname'];
+$last_name = $_POST['lname'];
+$organization_id = $_POST['org'];
 $date = $_POST['date'];
 $activity_name = $_POST['activity_name'];
 $description = $_POST['description'];
+$email = $_POST['email'];
 
 echo "Thank you " .$fname . " for submitting the event called \"" . $activity_name . "\"";
+
+require("db_connect.php");
+$db = get_db();
+
+try
+{
+  // Add the event
+  
+  $query = 'INSERT INTO users(organization_id, email, first_name, last_name) VALUES(:organization_id, :email, :first_name, :last_name)';
+  $statement = $db->prepare($query);
+  
+  $statement->bindValue(':organization_id', $organization_id);
+  $statement->bindValue(':email', $email);
+  $statement->bindValue(':first_name', $first_name);
+  $statement->bindValue(':last_name', $last_name) ;
+  $statement->execute();
+  // get the new id
+  //$scriptureId = $db->lastInsertId("scripture_id_seq");
+  // Now go through each topic id in the list from the user's checkboxes
+  //foreach ($topicIds as $topicId)
+  //{
+   // echo "ScriptureId: $scriptureId, topicId: $topicId";
+   // // Again, first prepare the statement
+   // $statement = $db->prepare('INSERT INTO scripture_topic(scriptureId, topicId) VALUES(:scriptureId, :topicId)');
+    // Then, bind the values
+  //  $statement->bindValue(':scriptureId', $scriptureId);
+   // $statement->bindValue(':topicId', $topicId);
+   // $statement->execute();
+  }
+}
+catch ()
+{
+    echo "There was an error";
+  die();
+}
+
+
 
 
 
@@ -95,21 +135,8 @@ echo "Thank you " .$fname . " for submitting the event called \"" . $activity_na
 
 
 /**********************************************************
-// get the data from the POST
-$book = $_POST['txtBook'];
-$chapter = $_POST['txtChapter'];
-$verse = $_POST['txtVerse'];
-$content = $_POST['txtContent'];
-$topicIds = $_POST['chkTopics'];
-// For debugging purposes, you might include some echo statements like this
-// and then not automatically redirect until you have everything working.
-// echo "book=$book\n";
-// echo "chapter=$chapter\n";
-// echo "verse=$verse\n";
-// echo "content=$content\n";
-// we could (and should!) put additional checks here to verify that all this data is actually provided
-require("dbConnect.php");
-$db = get_db();
+
+
 try
 {
   // Add the Scripture
