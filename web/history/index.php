@@ -105,9 +105,9 @@ try
   $statement->execute();
 
 
-  $statement2 = $db->prepare('INSERT INTO event(updated, act_date, title, description, organization_id) VALUES(:updated, :act_date, :title, :description, :organization_id)');
+  $statement2 = $db->prepare('INSERT INTO event(act_date, title, description, organization_id) VALUES(:act_date, :title, :description, :organization_id)');
   
-  $statement2->bindValue(':updated', date());
+  
   $statement2->bindValue(':act_date', $date);
   $statement2->bindValue(':title', $activity_name);
   $statement2->bindValue(':Description', $description)
