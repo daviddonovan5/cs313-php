@@ -24,7 +24,7 @@
     
     <h4>Enter Information For a New Event</h4><hr/>
 
-    <form name="newHistory" action="" method="POST">
+    <form action="" method="POST">
 
       <span class="prompt"> Enter your first name </span><br>
       <input type="text" name="fname"><br>
@@ -61,7 +61,7 @@
 
 <?php
 
- if (isset($_POST["newHistory"])){
+ if (isset($_POST)){
   
 echo("Thank you for submitting the history");
 }
