@@ -46,13 +46,8 @@
       
       if (isset($_POST["org"])){
        include "db_connect.php";
-       
-         if(isset($_POST['delete'])){
-    
-    
-      //$db->query("DELETE FROM event WHERE event_id = $_POST[hidden]");
-      echo "EVENT DELETED";
-    };
+
+      
        echo "<h3> Results</h3>";
 
         if ($_POST["org"] == 0){
@@ -96,7 +91,14 @@
     } 
 
 
-
+ 
+       
+         if(isset($_POST['delete'])){
+          include "db_connect.php";
+        
+         db->query("DELETE FROM event WHERE event_id = $_POST[hidden]");
+          echo "EVENT DELETED";
+        };
 
     
   ?>
