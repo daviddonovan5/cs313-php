@@ -49,6 +49,6 @@ VALUES ('Ward Activities');
 21
 
 
-INSERT INTO event (user_id, updated, act_date, title, description)
-VALUES(1, current_date, DATE '2018-9-12', 'On 9/12/18 two new members were baptized. The new converts names are Andrew and Diane Gregory. They were taught by the sister missionaries serving in the ward and baptized by Josh Arnold, a member of the elder’s quorum. On Sunday, 9/16/18 both of the Gregory’s were confirmed in sacrament meeting by President Danny Jensen of the Elders quorum. Andrew was then sustained to receive the Aaronic priesthood and to be ordained to the office of Priest.
-');
+INSERT INTO event (user_id, updated, act_date, title, description, organizaiton_id)
+VALUES(1, current_date, DATE '2018-9-12', 'Family Baptism', 'On 9/12/18 two new members were baptized. The new converts names are Andrew and Diane Gregory. They were taught by the sister missionaries serving in the ward and baptized by Josh Arnold, a member of the elder’s quorum. On Sunday, 9/16/18 both of the Gregory’s were confirmed in sacrament meeting by President Danny Jensen of the Elders quorum. Andrew was then sustained to receive the Aaronic priesthood and to be ordained to the office of Priest.
+', 1);
