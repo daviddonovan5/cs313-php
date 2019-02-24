@@ -87,9 +87,9 @@
       }
     } 
   if(isset($_POST['delete'])){
-    $deleteQuery= "DELETE FROM event WHERE event_id = $_POST[hidden]";
+    ;
     
-      $db->query("$deleteQuery");
+      $db->query("$deleteQuery= "DELETE FROM event WHERE event_id = $_POST[hidden]");
       echo "EVENT DELETED";
 
       };
