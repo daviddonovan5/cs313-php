@@ -49,7 +49,7 @@
        echo "<h3> Results</h3>";
         if ($_POST["org"] == 0){
           
-          foreach ($db->query('SELECT event.act_date, event.title, event.description, organization.organization_name, users.first_name, users.last_name
+          foreach ($db->query('SELECT event.act_date, event.title, event.description, organization.organization_name, users.first_name, users.last_name, event.event_id
             FROM event
             INNER JOIN users ON event.user_id = users.user_id
             INNER JOIN organization ON users.organization_id = organization.organization_id
@@ -58,6 +58,8 @@
         //print_r($row);
           echo "<p><b> <CENTER>" . $row['act_date'] . " {$row['title']} <br>{$row['organization_name']} </b></CENTER> </p>";
           echo "<p>" .$row['description'] . "</p>";
+
+          echo "<a href 'delete.php?del=$row['event_id']'>delete</a>"
         }
       }
       else{
