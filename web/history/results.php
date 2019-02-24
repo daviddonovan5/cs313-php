@@ -87,7 +87,7 @@
       }
     } 
   if(isset($_POST['delete'])){
-      echo "This works";
+      echo "Here is the event id " . $_POST[hidden];
             };
 
 
