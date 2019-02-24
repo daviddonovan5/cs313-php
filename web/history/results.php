@@ -59,7 +59,7 @@
           echo "<p><b> <CENTER>" . $row['act_date'] . " {$row['title']} <br>{$row['organization_name']} </b></CENTER> </p>";
           echo "<p>" .$row['description'] . "</p>";
 
-          echo "<a href='delete.php?del $row['event_id']'> delete this item </a>";
+          echo "<a href='delete.php?del $row['id']'> delete this item </a>";
         }
       }
       else{
