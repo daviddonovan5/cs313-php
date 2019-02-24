@@ -87,7 +87,6 @@
           echo "<input type=hidden name=hidden value={$row['event_id']}>";
           echo "<input type=submit name=delete value=Delete>";
           echo "</form>";
-
         }
 
        
