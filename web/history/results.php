@@ -86,6 +86,12 @@
       }
     } 
 
+    if(isset($_POST['delete'])){
+      $db->query ("DELETE FROM event WHERE event_id='$_POST(hidden)')";
+
+
+    };
+
 
     
   ?>
