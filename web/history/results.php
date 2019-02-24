@@ -47,6 +47,13 @@
       if (isset($_POST["org"])){
        include "db_connect.php";
        echo "<h3> Results</h3>";
+
+         if(isset($_POST['delete'])){
+    
+    
+      //$db->query("DELETE FROM event WHERE event_id = $_POST[hidden]");
+      echo "EVENT DELETED";
+    };
         if ($_POST["org"] == 0){
           
           foreach ($db->query('SELECT event.act_date, event.title, event.description, organization.organization_name, users.first_name, users.last_name, event.event_id
@@ -86,12 +93,7 @@
 
       }
     } 
-  if(isset($_POST['delete'])){
-    
-    
-      $db->query("SELECT * WHERE event_id = $_POST[hidden]");
-      echo "EVENT DELETED";
-    };
+
 
 
 
