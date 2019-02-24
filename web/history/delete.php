@@ -1,1 +1,5 @@
-This link works
+<?php
+
+echo "The event id is" . $del;
+
+?>
