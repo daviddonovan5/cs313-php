@@ -96,7 +96,7 @@
          if(isset($_POST['delete'])){
           include "db_connect.php";
         
-         //db->query("DELETE FROM event WHERE event_id = $_POST[hidden]");
+         db->query("DELETE FROM event WHERE event_id = $_POST[hidden];");
           echo "EVENT DELETED";
         };
 
