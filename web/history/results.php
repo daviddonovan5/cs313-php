@@ -63,9 +63,7 @@
           echo "<input type=submit name=delete value=Delete>";
           echo "</form>";
 
-          if(isset($_POST['delete'])){
-      echo "This works";
-            };
+        
           
         }
       }
@@ -88,7 +86,9 @@
 
       }
     } 
-
+  if(isset($_POST['delete'])){
+      echo "This works";
+            };
 
 
 
