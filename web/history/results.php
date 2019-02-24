@@ -59,13 +59,10 @@
             ORDER BY event.act_date ASC') as $row)
         {
         //print_r($row);
-          echo "<form action=results.php method=post>";
+         
           echo "<p><b> <CENTER>" . $row['act_date'] . " {$row['title']} <br>{$row['organization_name']} </b></CENTER> </p>";
           echo "<p>" .$row['description'] . "</p>";
-          echo "<input type=hidden name=hidden value={$row['event_id']}>";
-          echo "<input type=submit name=delete value=Delete>";
-          echo "</form>";
-
+         
         
           
         }
