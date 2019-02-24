@@ -69,7 +69,7 @@
       }
       else{
 
-            foreach ($db->query("SELECT event.act_date, event.title, event.description, organization.organization_name, users.first_name, users.last_name event.event_id
+            foreach ($db->query("SELECT event.act_date, event.title, event.description, organization.organization_name, users.first_name, users.last_name, event.event_id
             FROM event
             INNER JOIN users ON event.user_id = users.user_id
             INNER JOIN organization ON users.organization_id = organization.organization_id
