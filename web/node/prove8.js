@@ -1,29 +1,25 @@
-const http = require('http');
-const url = require('url');
-const fs = require('fs');
+var http = require('http');
 
-const server = http.createServer(onRequest);
 
-server.listen(8888);
-
-function onRequest(request, response) {
-    const path = url.parse(request.url, true);
-
-    if (path.path == '/home') {
-    	const html = fs.readFileSync('home.html').toString();
-	    response.writeHead(200, {"Content-Type": "text/html"});
-	    response.write("<h1>Hello World</h1>");
-	    response.end();
-    } else if (path.path == '/getData') {
-    	const json = '{"name":"David Donovan","class":"cs313"}';
-	    response.writeHead(200, {"Content-Type": "application/json"});
-	    response.write(json);
-	    response.end();
+function onRequest(req, res){
+    if (req.url == "/home") {
+        res.writeHead(200, {"Content-Type": "text/html"});
+        res.write('<html>');
+        res.write('<h1>Welcome to the Home Page</h1>');
+        res.write('</html>');
+        res.end();
+    } else if (req.url == "/getData") {
+        res.writeHead(200, {"Content-Type": "application/json"});
+        var user = {"name":"David Donovan","class":"cs313"}
+        res.write(JSON.stringify(user));
+        res.end();
     } else {
-    	response.writeHead(404, {"Content-Type": "text/html"});
-	    response.write("Page Not Found");
-	    response.end();
+        res.writeHead(404, {"Content-Type": "text/html"});
+        res.write("404 Not Found\n")
+        res.end();
     }
 }
 
-console.log("Hello World");
+http.createServer(onRequest).listen(8888);
+
+console.log("Running Server on http://localhost:8888/home");
